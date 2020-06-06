@@ -1,0 +1,449 @@
+@font-face {
+    font-family: 'raleway';
+    src: url('polices/raleway/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('polices/raleway/Raleway-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'raleway-Bold';
+    src: url('polices/raleway/Raleway-Bold.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 1px solid black;
+    font-size: medium;
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'raleway', 'Times New Roman', Times, Arial, Helvetica, sans-serif;
+}
+
+aside {
+    background: rgba(253, 192, 12);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.contact p {
+    overflow-wrap: break-word;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.contact {
+    width: 100%;
+}
+
+.propos {
+    width: 100%;
+}
+
+.propos p {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    color: rgba(49, 49, 49);
+}
+
+.icone {
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid rgba(49, 49, 49);
+    padding: 17px 13px;
+}
+
+aside h3 {
+    background: rgba(49, 49, 49);
+    color: rgba(253, 192, 12);
+    text-align: center;
+    font-family: 'raleway-bold', 'Times New Roman', Times, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 4px;
+    font-size: 1.5em;
+}
+
+aside footer h3 {
+    font-size: 1.5em;
+}
+
+.photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px rgb(48, 47, 47);
+}
+
+.photo {
+    margin-top: 10px;
+}
+
+.loisirs {
+    margin-top: auto;
+    margin-bottom: 45px;
+}
+
+.loisirs i {
+    color: rgba(49, 49, 49);
+}
+
+/*partie droite*/
+h1 {
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+main h3 {
+    font-family: 'Raleway', 'Times New Roman', Times, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+main {
+    padding-left: 60px;
+    padding-right: 15px;
+}
+
+.nom {
+    margin-bottom: 75px;
+    font-family: 'Raleway', 'Times New Roman', Times, sans-serif;
+}
+
+.nom h1 {
+    font-variant: small-caps;
+    font-size: 3em;
+    color: rgba(49, 49, 49);
+    font-family: 'raleway', Times, Arial, Helvetica, sans-serif;
+    padding-right: 45px;
+}
+
+.nom .prenom h1 {
+    font-size: 3em;
+}
+
+.prenom {
+    color: rgba(253, 192, 12);
+    text-shadow: 1px 1px 2px rgba(253, 192, 12);
+}
+
+.formation {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: justify;
+}
+
+.point {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 215px;
+}
+
+.titre {
+    font-size: 1.1em;
+    font-family: Times, Geneva, Verdana, sans-serif;
+    width: 730px;
+}
+
+.point i {
+    color: rgba(253, 192, 12);
+    padding-top: 25px;
+}
+
+.point p {
+    font-weight: bold;
+}
+
+main .titre i {
+    color: rgba(253, 192, 12);
+    font-size: 1.3em;
+}
+
+main .titre {
+    border-bottom: 2px solid rgba(253, 192, 12);
+}
+
+.devel {
+    border-bottom: 2px solid rgba(253, 192, 12);
+}
+
+.experience {
+    display: flex;
+    flex-direction: row;
+}
+
+main i {
+    padding-right: 20px;
+}
+
+.texte {
+    width: 500px;
+    padding-left: 15px;
+    text-align: justify;
+}
+
+.texte p {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.texte .st {
+    font-size: 15px;
+}
+
+.recommandations {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 75px;
+}
+
+.recommandation {
+    width: 396px;
+}
+
+.recommandation .adress {
+    font-weight: bold;
+}
+
+@media only screen and (max-width:1200px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .container {
+        width: 100%;
+        border: none;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        padding: 0px;
+        margin: auto;
+        width: 100%;
+    }
+
+    main {
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nom h1 {
+        padding-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .nom {
+        margin-bottom: 0px;
+    }
+
+    .titre {
+        width: 100%;
+        margin: auto;
+    }
+
+    .titre h2 {
+        margin-bottom: 15px;
+    }
+
+    .formation {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: justify;
+    }
+
+    .experience {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: justify;
+    }
+
+    .texte {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        border-bottom: 0.1em dotted rgba(49, 49, 49);
+        padding-left: 0;
+    }
+
+    .texte p {
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .point {
+        width: auto;
+        margin: auto;
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    .point i {
+        margin: auto 15px;
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    .point p {
+
+        text-align: start;
+    }
+
+    .recommandation {
+        width: 47.5%;
+    }
+
+    aside {
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .propos p {
+        text-align: center;
+    }
+
+    .icones {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .icone {
+        padding: 17px 10px;
+    }
+}
+
+@media only screen and (max-width:599px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .container {
+        border: none;
+        display: flex;
+        flex-flow: column-reverse wrap;
+        padding: 0px;
+        margin: auto;
+        width: 100%;
+    }
+
+    main {
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nom h1 {
+        padding-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .nom {
+        margin-bottom: 0px;
+    }
+
+    .titre {
+        width: 100%;
+        margin: auto;
+    }
+
+    .formation {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: justify;
+    }
+
+    .experience {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: justify;
+    }
+
+    .texte {
+        width: 80%;
+        margin: auto;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        border-bottom: 0.1em dotted rgba(49, 49, 49);
+    }
+
+    .recommandation {
+        width: 100%;
+    }
+
+    .recommandations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        margin-bottom: -50px;
+    }
+
+    aside {
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .icones {
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+    body {
+        width: 108%;
+        margin: 0;
+    }
+}
